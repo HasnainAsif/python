@@ -19,6 +19,10 @@ with open('web-scrapping/practice/home.html', 'r') as html_file:
     # for course in course_html_tags:
     #     print(course.text)
 
+    ## FIND ALL USING ID
+    # vars = soup.find_all('div', id="card-python-for-beginners")
+    # print(vars)
+
     ## CARDS
     # course_cards = soup.find_all('div', class_='card')
     # for card in course_cards:
@@ -27,12 +31,9 @@ with open('web-scrapping/practice/home.html', 'r') as html_file:
     ## GET ALL h5 TAGS IN course_cards list
     #     print(course.h5)
 
-    course_cards = soup.find_all('div', class_='card')
-    for course in course_cards:
-        course_name = course.h5.text
-        course_price = course.a.text.split(' ')[-1]
+    # course_cards = soup.find_all('div', class_='card')
+    # for course in course_cards:
+    #     course_name = course.h5.text
+    #     course_price = course.a.text.split(' ')[-1]
         
-        print(f'"{course_name}" costs {course_price}')
-
-
-
+    #     print(f'"{course_name}" costs {course_price}')

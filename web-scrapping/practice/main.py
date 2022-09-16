@@ -2,8 +2,9 @@
 # python -m pip install beautifulsoup4, python -m pip install requests, python -m pip install lxml
 
 from bs4 import BeautifulSoup
+import os
 
-with open('web-scrapping/practice/home.html', 'r') as html_file:
+with open(f'{os.getcwd()}/home.html', 'r') as html_file:
     content = html_file.read()
     # print(content) # output file data
 

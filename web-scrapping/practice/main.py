@@ -29,14 +29,14 @@ with open(f'{os.getcwd()}/home.html', 'r') as html_file:
     ## CARDS
     # course_cards = soup.find_all('div', class_='card')
     # for card in course_cards:
-    ## GET ALL TEXTS IN CARDS
+    # # GET ALL TEXTS IN CARDS
     #     print(card.text)
-    ## GET ALL h5 TAGS IN course_cards list
-    #     print(course.h5)
+    # # GET ALL h5 TAGS IN course_cards list
+    #     print(card.h5)
 
-    course_cards = soup.find_all('div', class_='card')
-    for course in course_cards:
-        course_name = course.h5.text
-        course_price = course.a.text.split(' ')[-1]
+    # course_cards = soup.find_all('div', class_='card')
+    # for course in course_cards:
+    #     course_name = course.h5.text
+    #     course_price = course.a.text.split(' ')[-1]
         
-        print(f'"{course_name}" costs {course_price}')
+    #     print(f'"{course_name}" costs {course_price}')

@@ -1,0 +1,34 @@
+Create a conda environment with python installed in it:
+    conda create -n myenv python=3.9
+
+List environments:
+    conda env list
+
+Activate Environment:
+    conda activate myenv
+
+Install packages:
+    conda install pandas numpy
+
+List packages:
+    conda list
+
+Deactivate environment:
+    conda Deactivate
+
+Remove environment:
+    conda env remove -n myenv
+
+Save installed packages(of an environment) to a yml file:
+    conda env export > environment.yml
+
+Install all packages from a yml file:
+    conda env create -f environment.yml
+
+Track environments:
+    conda list --explicit > pkgs.txt
+
+Install mamba:
+    conda install conda-forge::mamba
+    -- mamba commands are similar to conda. Just replace 'conda' with 'mamba'. like; mamba install pandas, mamba list etc
+
